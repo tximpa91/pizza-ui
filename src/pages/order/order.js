@@ -315,7 +315,12 @@ export default function PizzaOrder() {
       <HeaderBar />
       <div className={classes.root}>
         <Paper className={classes.paper}>
-          <EnhancedTableToolbar numSelected={selected.length} result={result} original={original} setResult={setResult} />
+          <EnhancedTableToolbar
+            numSelected={selected.length}
+            result={result}
+            original={original}
+            setResult={setResult}
+          />
           <TableContainer>
             <Table
               className={classes.table}
